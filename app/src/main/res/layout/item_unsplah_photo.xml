@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="250dp">
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </ImageView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignBottom="@id/image"
+        android:background="@drawable/gradient" />
+
+    <TextView
+        android:id="@+id/userNameTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/image"
+        android:layout_margin="8dp"
+        android:gravity="center_vertical"
+        android:textColor="@color/white"
+        app:drawableStartCompat="@drawable/ic_baseline_person_24"
+        tools:text="Username"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:drawablePadding="4dp"
+        >
+
+    </TextView>
+
+</RelativeLayout>
